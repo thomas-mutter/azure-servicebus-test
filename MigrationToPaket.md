@@ -18,6 +18,7 @@ Findings:
 - paket.dependencies: framework: netcoreapp3.1, netstandard2.0, netstandard2.1
 
 So no packages are actually referenced in the project and build fails.
+After changing framework to netcoreapp2.2, packages are installed and build succeeds.
 
 ```powershell
 dotnet paket install
